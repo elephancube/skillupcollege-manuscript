@@ -1,9 +1,9 @@
 {
-    "generated_at": "2026-06-05",
+    "generated_at": "2026-06-11",
     "site_url": "https://skillup.college",
     "site_name": "スキルアップカレッジ",
-    "total_courses": 15,
-    "total_lessons": 114,
+    "total_courses": 20,
+    "total_lessons": 154,
     "categories": [
         {
             "slug": "web",
@@ -303,6 +303,118 @@
                             "title": "生成AIを安全に使う——著作権・情報漏えい・ガイドライン",
                             "description": "生成AIの利用で発生しうる著作権リスクや情報漏えいリスクを理解し、日本のガイドラインや実務的な注意点を学ぶ",
                             "estimated_time": "20分"
+                        }
+                    ]
+                },
+                {
+                    "slug": "prompt-engineering-practical",
+                    "title": "プロンプトエンジニアリング実践",
+                    "subtitle": "「指示」から「設計」へ——LLM で安定した成果を出すための評価とイテレーション",
+                    "difficulty": "初級〜中級",
+                    "estimated_time": "約200分",
+                    "lesson_count": 8,
+                    "published_at": "2026-06-10",
+                    "updated_at": "2026-06-10",
+                    "target_audience": "社内で生成 AI の利活用を任されているマーケ・PM・人事・営業・カスタマーサポート・コンサル・企画担当者。LLM API を使った社内 AI 機能を担当する非エンジニア、生成 AI を業務に組み込みたい中小企業の経営者・幹部、AI 機能を持つ SaaS の PM など。エンジニアでも、プロンプト評価・運用の体系を知りたい方に役立つ",
+                    "prerequisites": "生成 AI（ChatGPT・Claude・Gemini）を業務や日常で 1 か月以上試した経験。「生成 AI 入門コース」を先に受講していると概念がスムーズだが、独立して読めるよう設計。プログラミング経験は不要（API・コードの細部には踏み込まない）",
+                    "learning_goals": [
+                        "プロンプトエンジニアリングを「指示の作文」ではなく「評価とイテレーションを伴う設計」として捉えられる",
+                        "プロンプトの 5 要素（役割・指示・文脈・例・出力形式）を使い分けて、目的に合った骨格を組める",
+                        "Zero-shot / Few-shot / Chain-of-Thought を使い分け、reasoning モデル時代の使いどころを判断できる",
+                        "JSON Schema や XML タグで構造化出力を制御し、検証とリトライを設計できる",
+                        "プロンプト評価セットを設計し、定量・定性の両面で A/B 比較ができる",
+                        "Self-Consistency・Tree of Thoughts・Reflexion・Self-Refine など高度な推論パターンを使い分けられる",
+                        "Function Calling・ReAct・MCP を理解し、AI エージェントの「自律性のレベル」を選べる",
+                        "RAG・プロンプトインジェクション対策・バージョン管理を含む、業務応用の安全運用設計ができる"
+                    ],
+                    "keywords": [
+                        "プロンプトエンジニアリング",
+                        "システムプロンプト",
+                        "ユーザープロンプト",
+                        "プロンプトの 5 要素",
+                        "persona",
+                        "Zero-shot",
+                        "Few-shot",
+                        "Chain-of-Thought",
+                        "Brown et al. 2020",
+                        "Wei et al. 2022",
+                        "Self-Consistency",
+                        "Tree of Thoughts",
+                        "Reflexion",
+                        "Self-Refine",
+                        "JSON Schema",
+                        "Constrained Generation",
+                        "XML タグ",
+                        "LLM-as-a-Judge",
+                        "プロンプト評価セット",
+                        "Function Calling",
+                        "Tool Use",
+                        "ReAct",
+                        "Model Context Protocol（MCP）",
+                        "RAG（検索拡張生成）",
+                        "プロンプトインジェクション",
+                        "ジェイルブレイク",
+                        "Constitutional AI",
+                        "プロンプトバージョン管理",
+                        "Claude Opus 4.7",
+                        "GPT-5.5",
+                        "Gemini 3.1 Pro",
+                        "reasoning モデル",
+                        "Claude Extended Thinking",
+                        "温度（temperature）",
+                        "文脈窓",
+                        "トークン"
+                    ],
+                    "course_url": "https://skillup.college/courses/it-basics/prompt-engineering-practical/",
+                    "manuscript_path": "./IT基礎知識/プロンプトエンジニアリング実践.md",
+                    "lessons": [
+                        {
+                            "slug": "lesson-01",
+                            "title": "プロンプトエンジニアリングとは何か——「指示」から「設計」へ",
+                            "description": "プロンプトエンジニアリングの定義と生成 AI 入門との接続、LLM 動作の最低限の理解（次トークン予測・文脈窓・温度）、2026 年 6 月時点の主要モデル（Claude Opus 4.7・GPT-5.5・Gemini 3.1 Pro）と reasoning モデルの位置づけ、本コースの守備範囲を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-02",
+                            "title": "プロンプトの基本骨格——役割・指示・文脈・例・出力形式",
+                            "description": "システムプロンプトとユーザープロンプトの区別、5 要素のフレームワーク（役割・指示・文脈・例・出力形式）、persona 設定の効用と過信のリスク、指示の明示化と禁止事項の併用、プロンプトを「依頼書」として書く発想を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-03",
+                            "title": "Few-shot と Chain-of-Thought——古典技法の使いどころ",
+                            "description": "Zero-shot / Few-shot / One-shot の使い分け、Brown et al. 2020 の few-shot 学習、例の選び方（多様性・難度配分・ネガティブ例）、Chain-of-Thought（Wei et al. 2022）の原理、reasoning モデル時代における使いどころの変化を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-04",
+                            "title": "出力制御——構造化、JSON Schema、Markdown／XML",
+                            "description": "構造化出力の必要性、JSON Schema 指定、Constrained Generation、XML タグでの構造化（Anthropic 推奨パターン）、Markdown テンプレート、出力検証とリトライ設計、長い出力での失敗パターンを学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-05",
+                            "title": "イテレーション設計——プロンプトの評価と改善サイクル",
+                            "description": "プロンプト評価セット（test set）の作り方、量的指標（精度・再現率・合意率・コスト・レイテンシ）と質的レビュー、A/B 比較とプロンプトの履歴管理、エラー分析と原因の分類、LLM-as-a-Judge の限界と使い方を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-06",
+                            "title": "高度な推論パターン——Self-Consistency／Tree of Thoughts／Reflexion",
+                            "description": "Self-Consistency（Wang et al. 2022）、Tree of Thoughts（Yao et al. 2023）、Reflexion（Shinn et al. 2023）、Self-Refine（Madaan et al. 2023）、メタプロンプティングとプロンプト連鎖、reasoning モデル登場による技法の使い分けの変化を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-07",
+                            "title": "ツール使用と AI エージェント——Function Calling・ReAct・MCP",
+                            "description": "Function Calling / Tool Use の仕組み、ReAct（Yao et al. 2022）パターン、エージェントの 5 つの構成要素、Model Context Protocol（MCP、Anthropic 2024 年 11 月）、主流エージェント・フレームワーク、「自律性のレベル」と運用上の境界を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-08",
+                            "title": "業務応用と安全性——RAG・プロンプトインジェクション・バージョン管理・修了後",
+                            "description": "RAG（検索拡張生成）とプロンプト設計の接続、プロンプトインジェクションとジェイルブレイク、Constitutional AI、プロンプトのバージョン管理、プロンプト運用の CI/CD、コース修了後の学習方向を学ぶ",
+                            "estimated_time": "25分"
                         }
                     ]
                 }
@@ -931,6 +1043,115 @@
                             "estimated_time": "25分"
                         }
                     ]
+                },
+                {
+                    "slug": "remote-management-practical",
+                    "title": "リモートマネジメント実践",
+                    "subtitle": "物理的に離れたチームで成果を出す設計と運用——「管理放棄」でも「過剰監視」でもない第三の道",
+                    "difficulty": "初級〜中級",
+                    "estimated_time": "約200分",
+                    "lesson_count": 8,
+                    "published_at": "2026-06-10",
+                    "updated_at": "2026-06-10",
+                    "target_audience": "リモート／ハイブリッド体制でチームを率いるマネージャー・チームリーダー・プロジェクトマネージャー・スタートアップ創業者。コロナ後に急遽リモート化した組織で運用に悩んでいる方、これから分散チームの責任者を引き受ける方、人事・組織開発の担当者として全社のリモート方針を設計する立場の方も対象。後半 2 レッスンはリモートで働くメンバーの方にも役立つ内容",
+                    "prerequisites": "業務上、複数人のチームをマネジメントした経験（数名以上のチームリーダー以上）。または、これから初めてリモートチームの責任者を引き受ける方。チームメンバーとしてリモート・ハイブリッドで働いている方も、レッスン 7・8 を中心に役立つ",
+                    "learning_goals": [
+                        "リモート／ハイブリッド／オフィス中心の 3 形態の違いと、リモートマネジメントの 3 つの誤解を区別できる",
+                        "リモートでの信頼構築（能力・誠実・思いやりの 3 要素）と、心理的安全性の追加課題を理解する",
+                        "同期と非同期コミュニケーションを使い分け、文書化主義による会議削減を設計できる",
+                        "リモート 1on1 とフィードバックを画面越しで機能させる動作を身につける",
+                        "アウトプット型パフォーマンス管理と、過剰監視ソフトの倫理的境界を判断できる",
+                        "ハイブリッドワークのプロキシミティ・バイアスと「公平な土俵」の設計発想を持つ",
+                        "メンバー視点で、リモートでの孤立対策・可視化されない仕事・自律を捉えられる",
+                        "リモートでキャリアを育てる戦略と、継続的なリモートマネジメント文化の設計ができる"
+                    ],
+                    "keywords": [
+                        "リモートワーク",
+                        "ハイブリッドワーク",
+                        "フルリモート",
+                        "オフィス中心",
+                        "GitLab Handbook",
+                        "Atlassian Team Anywhere",
+                        "Default to Async",
+                        "非同期コミュニケーション",
+                        "同期コミュニケーション",
+                        "文書化主義",
+                        "Loom",
+                        "信頼の 3 要素",
+                        "Mayer & Davis",
+                        "Tsedal Neeley",
+                        "心理的安全性",
+                        "OKR",
+                        "KPI",
+                        "アウトプット型評価",
+                        "過剰監視",
+                        "Microsoft Productivity Score",
+                        "プロキシミティ・バイアス",
+                        "Nick Bloom",
+                        "WFH 研究",
+                        "ハイブリッド会議",
+                        "Yang et al. 2022",
+                        "Microsoft Teams 研究",
+                        "emotional labor",
+                        "可視化されない仕事",
+                        "バーンアウト",
+                        "SBI フィードバック",
+                        "リモート 1on1",
+                        "Erin Meyer",
+                        "テレワークガイドライン"
+                    ],
+                    "course_url": "https://skillup.college/courses/management/remote-management-practical/",
+                    "manuscript_path": "./マネジメント・組織開発/リモートマネジメント実践.md",
+                    "lessons": [
+                        {
+                            "slug": "lesson-01",
+                            "title": "リモートマネジメントとは何か——3 つの誤解と全体像",
+                            "description": "リモート／ハイブリッド／オフィス中心の 3 形態の違い、「リモート＝管理放棄」「リモート＝出社の代替」「リモート＝コミュニケーション減少」という 3 つの誤解、世界の主流の動き（GitLab Handbook、Atlassian Team Anywhere）、本コースの守備範囲を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-02",
+                            "title": "信頼と心理的安全性——リモートで「同じ場にいない」を補う",
+                            "description": "リモートでの信頼構築（Mayer & Davis 1995 の能力・誠実・思いやりの 3 要素）、Edmondson の心理的安全性のリモートでの追加課題、Tsedal Neeley『Remote Work Revolution』の論点、非言語シグナルの読み方、「弱いシグナル」（Slack の反応の遅さなど）の解釈を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-03",
+                            "title": "非同期コミュニケーションの設計——会議を減らし、文書化する",
+                            "description": "同期 vs 非同期の使い分け、Default to Async 原則（GitLab、Stripe）、文書化主義、Loom などの非同期ビデオの位置づけ、会議の意思決定階層、不要な会議を減らす運用、タイムゾーン分散の現実を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-04",
+                            "title": "リモート 1on1 とフィードバック——画面越しの対話設計",
+                            "description": "リモート 1on1 のベストプラクティス（頻度・長さ・準備）、画面越しのアクティブリスニング、SBI フィードバック、オンライン 1on1 で起きやすい失敗パターン、メンバーの「見えない不安」を引き出す問いを学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-05",
+                            "title": "パフォーマンス管理——アウトプット型と監視のはざま",
+                            "description": "アウトプット型 vs インプット型評価、OKR・KPI の使い方、時間追跡ソフト・画面録画・キーログなど「過剰監視」の倫理、Microsoft Productivity Score（2020 年）論争、日本の労働法との関係、信頼と検証のバランスを学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-06",
+                            "title": "ハイブリッドワーク——プロキシミティ・バイアスと「公平な土俵」",
+                            "description": "ハイブリッドの 2 形態（オフィス中心／リモート中心）、Nick Bloom（スタンフォード）の Working from Home 研究、プロキシミティ・バイアス（昇進・評価の格差）、ハイブリッド会議の落とし穴、「全員リモート参加」の合意形成を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-07",
+                            "title": "メンバー視点①——孤立対策、可視化されない仕事、自律",
+                            "description": "在宅勤務の孤立問題、「見えない仕事」（emotional labor、調整作業）、自律と自己管理、Microsoft Teams 研究（Yang et al. 2022, Nature Human Behavior）、リモートでのバーンアウト予防を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-08",
+                            "title": "メンバー視点②と継続的な文化づくり——キャリア、振り返り、修了後",
+                            "description": "リモートで自分のキャリアを育てる戦略、可視性を意識的に作る、継続的なリモートマネジメント文化の設計、年次の振り返り、コース修了後の学習方向を学ぶ",
+                            "estimated_time": "25分"
+                        }
+                    ]
                 }
             ]
         },
@@ -1045,6 +1266,126 @@
                             "estimated_time": "25分"
                         }
                     ]
+                },
+                {
+                    "slug": "assertive-communication-basics",
+                    "title": "アサーティブコミュニケーション入門",
+                    "subtitle": "相手も自分も尊重する自己表現の技術——働く現場で「言えない」「言いすぎる」をなくす",
+                    "difficulty": "入門",
+                    "estimated_time": "約200分",
+                    "lesson_count": 8,
+                    "published_at": "2026-06-07",
+                    "updated_at": "2026-06-07",
+                    "target_audience": "「言いたいことを我慢しがち」「ついきつい言い方になってしまう」「断れない、頼めない」「評価面談や 1on1 で本音を伝えられない」と感じている社会人。営業・カスタマーサポート・人事・看護師・教員など感情労働の比重が高い職種、若手・リーダー・管理職を問わず幅広く対象。職場で人間関係に消耗している方、ハラスメントを未然に防ぐ対話力を身につけたい方にも役立つ内容",
+                    "prerequisites": "特になし。職場での会話・面談・チーム会議に参加した経験があると、各レッスンの事例が腑に落ちやすい。ファシリテーション入門コースを先に受講していると、コミュニケーション全体の設計視野が広がるが、独立して読めるようにする",
+                    "learning_goals": [
+                        "攻撃的・受動的・操作的・アサーティブの 4 つの自己表現タイプを区別し、自分の傾向を把握できる",
+                        "アサーティブの 10 の基本権を理解し、「我慢する自分が大人」という思い込みから距離を取れる",
+                        "思考・感情・事実を分けて、自分の不快感の正体を言語化できる",
+                        "I-message と観察ベースの表現で、相手を責めずに自分の状態を伝えられる",
+                        "DESC 法を使って、断る・主張する場面を 4 ステップで設計できる",
+                        "アクティブリスニングの 3 レベルと共感的理解で、相手の主張を受け止められる",
+                        "ブロークン・レコード、フォギング、ネガティブ・インクワイアリで、批判や操作に冷静に応じられる",
+                        "評価面談・1on1・チーム会議でアサーティブを実践し、ハラスメントとアサーティブの境界を理解できる"
+                    ],
+                    "keywords": [
+                        "アサーティブネス",
+                        "アサーション",
+                        "自他尊重",
+                        "4 つの自己表現タイプ",
+                        "受動的・非主張的",
+                        "攻撃的",
+                        "操作的・受動攻撃的",
+                        "アサーティブの 10 の権利",
+                        "I-message",
+                        "You-message",
+                        "DESC 法",
+                        "境界線（バウンダリー）",
+                        "ブロークン・レコード",
+                        "フォギング",
+                        "ネガティブ・アサーション",
+                        "ネガティブ・インクワイアリ",
+                        "NVC（非暴力コミュニケーション）",
+                        "観察と評価の分離",
+                        "感情とニーズ",
+                        "リクエスト",
+                        "アクティブリスニング",
+                        "共感的理解",
+                        "Carl Rogers の 3 条件",
+                        "パラフレーズ",
+                        "ジョハリの窓",
+                        "認知の歪み",
+                        "ABC 理論",
+                        "認知行動療法",
+                        "行動療法",
+                        "Manuel J. Smith",
+                        "Marshall Rosenberg",
+                        "Joseph Wolpe",
+                        "Andrew Salter",
+                        "Albert Ellis",
+                        "Aaron Beck",
+                        "平木典子",
+                        "セルフコンパッション",
+                        "リフレーミング",
+                        "SBI 法",
+                        "EAP",
+                        "臨床心理士",
+                        "公認心理師",
+                        "産業カウンセラー",
+                        "ハラスメントとアサーティブの境界"
+                    ],
+                    "course_url": "https://skillup.college/courses/communication/assertive-communication-basics/",
+                    "manuscript_path": "./コミュニケーション/アサーティブコミュニケーション入門.md",
+                    "lessons": [
+                        {
+                            "slug": "lesson-01",
+                            "title": "アサーティブコミュニケーションとは何か——4 つの自己表現タイプ",
+                            "description": "攻撃的・受動的・操作的・アサーティブの 4 分類、自他尊重という中核、行動療法の系譜（Salter 1949、Wolpe 1958）、日本での受容（平木典子）、「正直＝攻撃的」になりがちな構造を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-02",
+                            "title": "アサーティブの 10 の権利と心理的背景",
+                            "description": "Manuel J. Smith の 10 の基本権、認知療法の系譜（Ellis ABC 理論、Aaron Beck）、非主張・攻撃・操作の心理的コスト、日本の「我慢の文化」との相性、権利を義務と混同しないことを学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-03",
+                            "title": "自己理解の技術——感情・事実・解釈を分ける",
+                            "description": "思考・感情・事実の 3 分離、認知の歪み 10 種、ジョハリの窓、自分の不快感の正体を言語化する技術、信号としての感情の機能を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-04",
+                            "title": "「伝える」基本——I-message と観察ベースの表現",
+                            "description": "I-message と You-message の使い分け、観察と評価の分離、NVC の 4 ステップ（観察・感情・ニーズ・リクエスト）の入口、「いつ・何が・どう困ったか」を事実で述べる技術を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-05",
+                            "title": "断る・主張する——DESC 法と境界線設定",
+                            "description": "DESC 法（Describe・Express・Specify・Choose）、境界線の概念、「No」を伝える基本動作、突発依頼・過剰な仕事量・長時間労働の依頼・プライベートへの踏み込みなど場面別の応用を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-06",
+                            "title": "聴く——共感とアクティブリスニング",
+                            "description": "アクティブリスニングの 3 レベル、Carl Rogers の 3 条件（無条件の肯定的配慮・共感的理解・自己一致）、パラフレーズと要約、NVC の聴き方版、「同意」と「理解」を分ける技術を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-07",
+                            "title": "衝突・批判への対処——ブロークン・レコード、フォギング、ネガティブ・インクワイアリ",
+                            "description": "ブロークン・レコード、フォギング、ネガティブ・アサーション、ネガティブ・インクワイアリの 4 技法、攻撃と建設的批判を見分ける、「沈黙」も選択肢にする発想を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-08",
+                            "title": "職場での実践と継続トレーニング——評価面談、1on1、ハラスメントの境界",
+                            "description": "評価面談・1on1・チーム会議でのアサーティブ、上司への意見、部下へのフィードバック、ハラスメントとアサーティブの境界、ロールプレイ・ジャーナリング・SBI 記録による継続トレーニング、コース修了後の学習方向を学ぶ",
+                            "estimated_time": "25分"
+                        }
+                    ]
                 }
             ]
         },
@@ -1155,6 +1496,117 @@
                             "slug": "lesson-08",
                             "title": "継続するための仕組み——学習を習慣化する／コミュニティ／次の学習",
                             "description": "習慣化の科学（IF-THENプランニング）、学習コミュニティ、ラーニング・ジャーナル、生成AIを学習パートナーとして使う発想、コース修了後の学習方向を学ぶ",
+                            "estimated_time": "25分"
+                        }
+                    ]
+                },
+                {
+                    "slug": "career-design-basics",
+                    "title": "キャリアデザイン入門",
+                    "subtitle": "自分の Will から考える、職業人生の設計図——働く 40 年を「選び直せる連続」にする発想",
+                    "difficulty": "入門",
+                    "estimated_time": "約200分",
+                    "lesson_count": 8,
+                    "published_at": "2026-06-09",
+                    "updated_at": "2026-06-09",
+                    "target_audience": "「今の仕事を続けるべきか迷っている」「自分のキャリアの軸がわからない」「節目で立ち止まりたいが、何から考えればよいかわからない」と感じている社会人。20 代〜50 代の幅広い層、新卒・若手からミドル世代、シニア世代まで、職種・業界を問わず対象。人事・人材開発の担当者として社員のキャリア面談を行う立場の方にも、相談者の枠組みとして役立つ内容",
+                    "prerequisites": "特になし。社会人としての業務経験があると各レッスンの事例が腑に落ちやすいが、学生やキャリア初期の方でも「考え方の枠組み」として活用できる。リスキリング戦略入門を先に受講していると、スキル再構築の戦略と本コースの自己理解設計を組み合わせて使えるが、独立して読めるようにする",
+                    "learning_goals": [
+                        "キャリアの「プラン」と「デザイン」の違いを理解し、反復的に設計する姿勢を持つ",
+                        "Will / Can / Must の三角形を使い、自己理解を言語化できる",
+                        "Edgar Schein のキャリアアンカー 8 類型を知り、自分の価値観の核を推定できる",
+                        "John Holland の RIASEC とストレングス思考を理解し、強み・関心・適性を言葉にできる",
+                        "Donald Super のライフ・キャリア・レインボーで、人生の役割と時期の重なりを捉えられる",
+                        "Krumboltz の Planned Happenstance と Wrzesniewski のジョブ・クラフティングで、偶発と再構成を活かせる",
+                        "「辞める／残る」の二択を超えた、転職・社内転換・副業・独立・休職復職の選択肢を整理できる",
+                        "年 1 回の棚卸し、メンタリング、公的支援を使って、キャリアデザインを継続できる"
+                    ],
+                    "keywords": [
+                        "キャリアデザイン",
+                        "キャリアプラン",
+                        "キャリア発達",
+                        "VUCA",
+                        "Will / Can / Must",
+                        "メタ認知",
+                        "キャリアアンカー",
+                        "Edgar Schein",
+                        "RIASEC",
+                        "John Holland",
+                        "CliftonStrengths",
+                        "VIA 強み",
+                        "ライフ・キャリア・レインボー",
+                        "Donald Super",
+                        "生涯発達",
+                        "成長・探索・確立・維持・衰退",
+                        "ライフロール",
+                        "Planned Happenstance",
+                        "計画された偶発性",
+                        "John Krumboltz",
+                        "ジョブ・クラフティング",
+                        "Wrzesniewski & Dutton",
+                        "Protean Career",
+                        "Boundaryless Career",
+                        "Douglas Hall",
+                        "社内公募・社内 FA",
+                        "副業・複業",
+                        "10/10/10 ルール",
+                        "後悔最小化フレーム",
+                        "キャリアの棚卸し",
+                        "メンター",
+                        "ロールモデル",
+                        "国家資格キャリアコンサルタント",
+                        "ハローワーク",
+                        "ジョブカード制度"
+                    ],
+                    "course_url": "https://skillup.college/courses/career/career-design-basics/",
+                    "manuscript_path": "./キャリア・自己開発/キャリアデザイン入門.md",
+                    "lessons": [
+                        {
+                            "slug": "lesson-01",
+                            "title": "キャリアデザインとは何か——プランではなく「デザイン」で考える",
+                            "description": "キャリアの定義（職業 vs. 人生全体）、プラン（直線的計画）とデザイン（反復的設計）の違い、キャリア理論の 3 つの系譜（Super の発達論・Schein の組織心理・Krumboltz の社会的学習）、本コースの守備範囲と VUCA 時代の前提を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-02",
+                            "title": "自己理解の三角形——Will / Can / Must",
+                            "description": "Will（やりたい）・Can（できる）・Must（求められる）の 3 円の重なり、3 つを言語化するワーク、重ならないときの 3 つのパターン、日本企業の歴史的な Must 偏重とそこからの再設計、メタ認知の罠を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-03",
+                            "title": "価値観の核を知る——Edgar Schein のキャリアアンカー",
+                            "description": "Edgar Schein の 8 つのキャリアアンカー（専門能力／管理能力／自律・独立／保障・安定／創造性・起業家／奉仕・社会貢献／純粋な挑戦／生活様式）、自分のアンカーを推定する問い、アンカーは変わるか、日本での研究と文化的解釈を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-04",
+                            "title": "強み・関心・適性——John Holland の RIASEC とストレングス思考",
+                            "description": "John L. Holland の RIASEC 六角形（現実・研究・芸術・社会・企業・慣習）、環境とパーソナリティの一致説、Gallup CliftonStrengths と Peterson & Seligman の VIA というストレングス系の系譜、「弱みを直す」ではなく「強みを伸ばす」発想の限界と活かし方を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-05",
+                            "title": "ライフキャリアの視点——Donald Super のライフ・キャリア・レインボー",
+                            "description": "Donald E. Super の生涯発達理論、成長・探索・確立・維持・衰退の 5 段階、ライフ・キャリア・レインボー（子・学生・余暇・市民・労働者・配偶者・家族・親などの役割）、日本のライフイベント（出産・育児・介護）とキャリアの両立を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-06",
+                            "title": "偶発と再構成——Krumboltz の Planned Happenstance と Wrzesniewski のジョブ・クラフティング",
+                            "description": "John D. Krumboltz の Planned Happenstance（計画された偶発性）と 5 つの態度（好奇心・持続性・柔軟性・楽観性・冒険心）、Wrzesniewski & Dutton のジョブ・クラフティング（2001 年、作業・関係・認知の 3 種類）、Hall の Protean Career と Arthur & Rousseau の Boundaryless Career の概観を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-07",
+                            "title": "キャリアの選択肢を広げる——転職・社内転換・副業・独立・休職復職",
+                            "description": "「辞める／残る」の二択を超えた選択肢の整理、転職市場の現状、社内公募・社内 FA、副業・複業の入口、フリーランス・独立、育児・介護・治療と仕事の両立（休職・復職・時短）、意思決定のフレーム（10/10/10 ルール、後悔最小化の発想）を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-08",
+                            "title": "継続的キャリアデザインと社会資源——棚卸し・メンタリング・修了後の学習方向",
+                            "description": "キャリアの棚卸しを年 1 回の習慣にする方法、メンター・ロールモデルの見つけ方、キャリアコンサルタント・ハローワーク・ジョブカード制度などの公的支援、人事の 1on1・キャリア面談の活用、コース修了後の学習方向を学ぶ",
                             "estimated_time": "25分"
                         }
                     ]
@@ -1385,6 +1837,117 @@
                             "slug": "lesson-08",
                             "title": "CS 組織とこれから——CSM・CS Ops・生成AI・次の学習",
                             "description": "CSM の役割と KPI、CS Ops・TAM・サポートとの役割分担、CS プラットフォーム、PLG・生成AI 時代の CS、コース修了後の学習方向を案内する",
+                            "estimated_time": "25分"
+                        }
+                    ]
+                },
+                {
+                    "slug": "inside-sales-basics",
+                    "title": "インサイドセールス入門",
+                    "subtitle": "BtoB SaaS で「数を打つ」より「データで打つ」——リード獲得から商談化までの設計図",
+                    "difficulty": "初級〜中級",
+                    "estimated_time": "約200分",
+                    "lesson_count": 8,
+                    "published_at": "2026-06-11",
+                    "updated_at": "2026-06-11",
+                    "target_audience": "BtoB SaaS／サブスク企業のインサイドセールス（SDR・BDR・新規 IS 担当者）。フィールドセールスからインサイドセールスへキャリアシフトする方。営業企画・マーケティング・カスタマーサクセス担当者でマーケ〜営業の連携を整理したい方。中小〜中堅 BtoB SaaS の経営者・幹部で営業組織を設計しようとしている方。エンジニアでも、所属企業の営業組織の仕組みを理解したい方に役立つ",
+                    "prerequisites": "営業の基本用語（受注・失注・商談・提案・顧客）を知っていること。SaaS／サブスクリプション型サービスの利用経験があると理解が早いが必須ではない。プログラミング経験は不要",
+                    "learning_goals": [
+                        "インサイドセールスをフィールドセールス・カスタマーサクセスと区別して定義できる",
+                        "マーケティングファネルと MQL／SQL／SAL の境界を引き、リード管理の流れを描ける",
+                        "SDR と BDR の役割分担を、インバウンドとアウトバウンドの観点から整理できる",
+                        "コール・メール・マルチチャネルでのアプローチ設計と Cadence を組める",
+                        "BANT と SPIN を使い分け、ヒアリングと商談化の判断軸を持てる",
+                        "アクティビティ・コンバージョン・パイプラインの 3 階層で KPI を設計できる",
+                        "CRM・SFA・MA・会話分析 AI・生成 AI を「設計の前提を整える道具」として捉えられる",
+                        "フィールドセールス／カスタマーサクセスへのハンドオフを設計し、組織と個人の次のステップを描ける"
+                    ],
+                    "keywords": [
+                        "インサイドセールス",
+                        "フィールドセールス",
+                        "SDR（Sales Development Representative）",
+                        "BDR（Business Development Representative）",
+                        "リード（見込み客）",
+                        "MQL（Marketing Qualified Lead）",
+                        "SQL（Sales Qualified Lead）",
+                        "SAL（Sales Accepted Lead）",
+                        "ファネル",
+                        "TOFU・MOFU・BOFU",
+                        "リードスコアリング",
+                        "SLA（サービスレベル合意）",
+                        "ABM（Account Based Marketing）",
+                        "Aaron Ross",
+                        "Predictable Revenue",
+                        "Cadence",
+                        "コールスクリプト",
+                        "PASONA",
+                        "AIDA",
+                        "BANT",
+                        "SPIN",
+                        "Discovery Call",
+                        "Disqualify",
+                        "ハンドオフ",
+                        "パイプライン",
+                        "コンバージョン率",
+                        "受注貢献率",
+                        "CRM",
+                        "SFA",
+                        "MA（マーケティング・オートメーション）",
+                        "Sales Engagement Platform",
+                        "会話分析 AI",
+                        "生成 AI 支援",
+                        "RevOps",
+                        "レベニュー・チーム"
+                    ],
+                    "course_url": "https://skillup.college/courses/marketing-sales/inside-sales-basics/",
+                    "manuscript_path": "./マーケティング・営業/インサイドセールス入門.md",
+                    "lessons": [
+                        {
+                            "slug": "lesson-01",
+                            "title": "インサイドセールスとは何か——営業の分業化と SaaS 時代の前提",
+                            "description": "インサイドセールスとフィールドセールスの違い、営業の 4 分業（マーケ・IS・FS・CS）、レベニュー・チーム、BtoB SaaS 普及に伴うインサイドセールスの必然性、日本での普及背景、「営業＝個の根性」から「組織のサイエンス」への転換を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-02",
+                            "title": "リード獲得とファネル設計——MQL・SQL・SAL の定義",
+                            "description": "リード（見込み客）の定義、インバウンドとアウトバウンドの違い、マーケティングファネル（TOFU・MOFU・BOFU）、MQL・SQL・SAL の境界、リードスコアリングの基本、マーケと営業の SLA（サービスレベル合意）を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-03",
+                            "title": "SDR と BDR の役割分担——アウトバウンドとインバウンドの境界",
+                            "description": "SDR（Sales Development Representative）・BDR（Business Development Representative）の起源、インバウンド対応とアウトバウンド開拓の違い、ABM（Account Based Marketing）との接続、SDR・BDR のキャリアパス、Aaron Ross 『Predictable Revenue』の発想を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-04",
+                            "title": "アプローチ設計——コール・メール・マルチチャネル",
+                            "description": "電話・メール・LinkedIn・ウェビナー・ホワイトペーパー・チャットなど接点設計、Cadence（コール・メールの間隔と回数）、パーソナライゼーションと量産のバランス、コールスクリプトの考え方（「読み上げ」ではなく「型」）、メール件名・本文の構造（PASONA・AIDA）を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-05",
+                            "title": "ヒアリングと商談化——BANT／SPIN／顧客課題の言語化",
+                            "description": "ヒアリングフレームワーク BANT（Budget・Authority・Needs・Timeline）、SPIN（Situation・Problem・Implication・Need-payoff、Rackham 1988）、顧客の課題を顧客の言葉で再構成する設計、Discovery Call の組み立て、フィールドセールスへの商談引き継ぎ、Disqualify（あえて見送る）の判断軸を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-06",
+                            "title": "KPI と PDCA——数字で運用を回す",
+                            "description": "アクティビティ KPI（コール数・接続率・送信数・開封率）、コンバージョン KPI（商談化率・受注貢献率）、パイプライン KPI（パイプライン金額・期待値）、リードタイム、PDCA とエラー分析、量と質のバランス、「数字を追う」のではなく「数字に追われない」設計を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-07",
+                            "title": "ツール活用——CRM・SFA・MA・会話分析 AI と生成 AI",
+                            "description": "CRM・SFA・MA の役割分担、Sales Engagement Platform、会話分析 AI の概要、2026 年 6 月時点の生成 AI 活用（メール下書き・会話要約・商談前リサーチ・逆質問予測）、ツール選定の基本、データ品質と入力ハードルの問題を学ぶ",
+                            "estimated_time": "25分"
+                        },
+                        {
+                            "slug": "lesson-08",
+                            "title": "組織と次のステップ——キャリアパス・FS／CS との連携・コース修了後",
+                            "description": "SDR／BDR からのキャリアパス（FS・マネージャー・RevOps・マーケ）、フィールドセールスへの引き継ぎ（SLA・ハンドオフ会議）、カスタマーサクセスへの伝言、インサイドセールス組織のスケール段階、担当者のメンタルマネジメント、コース修了後の学習方向を学ぶ",
                             "estimated_time": "25分"
                         }
                     ]
